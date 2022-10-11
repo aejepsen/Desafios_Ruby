@@ -1,4 +1,7 @@
 receitas = []
+INSERIR_RECEITA = 1
+VER_RECEITAS = 2
+SAIR = 3
 
 def bem_vindo()
   puts 'Bem vindo ao Cookbook'
@@ -32,10 +35,10 @@ bem_vindo()
 
 opcao = menu()
 
-while(opcao != 3) do
-    if(opcao == 1)
+while(opcao != SAIR) do
+    if(opcao == INSERIR_RECEITA)
       receitas << cadastrar_receita()
-    elsif(opcao == 2)
+    elsif(opcao == VER_RECEITAS)
       ver_receitas(receitas)
     else
       puts 'Opção inválida'  
