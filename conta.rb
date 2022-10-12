@@ -21,6 +21,7 @@ class Conta
 
   def sacar(valor)
     if @saldo >= valor
+    # self.saldo -= valor
       @saldo -= valor
     else
       puts "Saldo insuficiente"
