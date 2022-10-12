@@ -1,3 +1,5 @@
+require_relative 'cliente'
+
 class Conta
   # attr_reader :numero, :titular, :saldo
   # attr_writer :saldo
@@ -5,9 +7,15 @@ class Conta
   attr_accessor :saldo
 
 
-  def initialize(numrero, titular, saldo)
+  # def initialize(numrero, titular, saldo)
+  #   @numero = numero
+  #   @titular = titular
+  #   @saldo = saldo
+  # end
+
+  def initialize(numrero, nome, sobre_nome, saldo)
     @numero = numero
-    @titular = titular
+    @titular = Cliente.new(nome, sobre_nome)
     @saldo = saldo
   end
 
