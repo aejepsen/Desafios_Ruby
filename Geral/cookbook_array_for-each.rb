@@ -1,5 +1,6 @@
 puts "Bem-vindo as Cookbook, sua rede social de receitas!"
 receitas = []
+
 while(true) do
     puts "Digite a receita"
     nome_receita = gets.chomp
